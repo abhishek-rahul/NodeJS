@@ -3,7 +3,7 @@ var rect = require('./Module/rectangle');
 function solveRect(l,b) {
     console.log("Solving for rectangle with l = "
                 + l + " and b = " + b);
-    rect(l,b, (err,rectangle) => {
+    rect(l,b, function disp(err,rectangle){
         if (err) {
 	        console.log("ERROR: ", err.message);
 	    }
